@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="800.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.myfoodstorage.pepefederico.progettoispw_2024.Controller.Grafico.profiloController">
+  <HBox prefHeight="800.0" prefWidth="800.0">
+        <VBox prefHeight="800.0" prefWidth="800.0" style="-fx-background-color: #FFFFFF;">
+           <HBox.margin>
+              <Insets top="5.0" />
+           </HBox.margin>
+           <padding>
+              <Insets left="20.0" right="20.0" />
+           </padding>
+         <HBox prefHeight="30.0" prefWidth="357.0">
+            <children>
+               <Label alignment="CENTER" prefHeight="46.0" prefWidth="742.0" text="Profilo ">
+                  <font>
+                     <Font name="System Bold" size="30.0" />
+                  </font>
+               </Label>
+            </children>
+         </HBox>
+              <HBox prefHeight="30.0" prefWidth="200.0">
+                 <VBox.margin>
+                    <Insets top="10.0" />
+                 </VBox.margin>
+                    <Label prefHeight="20.0" prefWidth="335.0" text="Tipo Utente">
+                       <font>
+                          <Font size="30.0" />
+                       </font>
+                    </Label>
+                    <Label fx:id="labelTipoUtente" disable="true" prefHeight="20.0" prefWidth="678.0" text="utente">
+                       <font>
+                          <Font size="30.0" />
+                       </font>
+                    </Label>
+              </HBox>
+              <HBox prefHeight="30.0" prefWidth="357.0">
+                 <VBox.margin>
+                    <Insets top="10.0" />
+                 </VBox.margin>
+                    <Label prefHeight="20.0" prefWidth="212.0" text="Nome Attività">
+                       <font>
+                          <Font size="30.0" />
+                       </font>
+                    </Label>
+                    <Label fx:id="labelNomeAttivita" disable="true" prefHeight="46.0" prefWidth="531.0" text="Nome Attivita">
+                       <HBox.margin>
+                          <Insets />
+                       </HBox.margin>
+                       <font>
+                          <Font size="30.0" />
+                       </font>
+                    </Label>
+              </HBox>
+              <HBox prefHeight="30.0" prefWidth="357.0">
+                 <VBox.margin>
+                    <Insets top="10.0" />
+                 </VBox.margin>
+                    <Label prefHeight="20.0" prefWidth="212.0" text="Partita IVA">
+                       <font>
+                          <Font size="30.0" />
+                       </font>
+                    </Label>
+                    <Label fx:id="LabelPartitaIVA" disable="true" prefHeight="46.0" prefWidth="531.0" text="Partita IVA">
+                       <HBox.margin>
+                          <Insets />
+                       </HBox.margin>
+                       <font>
+                          <Font size="30.0" />
+                       </font>
+                    </Label>
+              </HBox>
+              <HBox prefHeight="30.0" prefWidth="357.0">
+                 <VBox.margin>
+                    <Insets top="10.0" />
+                 </VBox.margin>
+                    <Label prefHeight="20.0" prefWidth="212.0" text="Nome">
+                       <font>
+                          <Font size="30.0" />
+                       </font>
+                    </Label>
+                    <Label fx:id="labelNomeUtente" disable="true" prefHeight="46.0" prefWidth="531.0" text="nome">
+                       <HBox.margin>
+                          <Insets />
+                       </HBox.margin>
+                       <font>
+                          <Font size="30.0" />
+                       </font>
+                    </Label>
+              </HBox>
+              <HBox prefHeight="30.0" prefWidth="357.0">
+                 <VBox.margin>
+                    <Insets top="10.0" />
+                 </VBox.margin>
+                    <Label prefHeight="20.0" prefWidth="212.0" text="Cognome">
+                       <font>
+                          <Font size="30.0" />
+                       </font>
+                    </Label>
+                    <Label fx:id="LabelCognomeUtente" disable="true" prefHeight="46.0" prefWidth="531.0" text="Cognome">
+                       <HBox.margin>
+                          <Insets />
+                       </HBox.margin>
+                       <font>
+                          <Font size="30.0" />
+                       </font>
+                    </Label>
+              </HBox>
+              <HBox prefHeight="30.0" prefWidth="357.0">
+                 <VBox.margin>
+                    <Insets top="10.0" />
+                 </VBox.margin>
+                    <Label prefHeight="20.0" prefWidth="212.0" text="E-mail">
+                       <font>
+                          <Font size="30.0" />
+                       </font>
+                    </Label>
+                    <Label fx:id="LabelEmail" disable="true" prefHeight="46.0" prefWidth="531.0" text="E-Mail">
+                       <HBox.margin>
+                          <Insets />
+                       </HBox.margin>
+                       <font>
+                          <Font size="30.0" />
+                       </font>
+                    </Label>
+              </HBox>
+              <HBox prefHeight="30.0" prefWidth="357.0">
+                 <VBox.margin>
+                    <Insets top="10.0" />
+                 </VBox.margin>
+                    <Label prefHeight="20.0" prefWidth="212.0" text="Password">
+                       <font>
+                          <Font size="30.0" />
+                       </font>
+                    </Label>
+                    <Label fx:id="LabelPassword" disable="true" prefHeight="46.0" prefWidth="531.0" text="Password">
+                       <HBox.margin>
+                          <Insets />
+                       </HBox.margin>
+                       <font>
+                          <Font size="30.0" />
+                       </font>
+                    </Label>
+              </HBox>
+              <HBox prefHeight="30.0" prefWidth="357.0">
+                 <VBox.margin>
+                    <Insets top="10.0" />
+                 </VBox.margin>
+                    <Label alignment="CENTER" prefHeight="46.0" prefWidth="742.0" text="Indirizzo Attività">
+                       <font>
+                          <Font name="System Bold" size="30.0" />
+                       </font>
+                    </Label>
+              </HBox>
+              <HBox prefHeight="30.0" prefWidth="357.0">
+                 <VBox.margin>
+                    <Insets top="10.0" />
+                 </VBox.margin>
+                    <Label prefHeight="20.0" prefWidth="212.0" text="Via / Piazza">
+                       <font>
+                          <Font size="30.0" />
+                       </font>
+                    </Label>
+                    <Label fx:id="LabelViaAttivita" disable="true" prefHeight="46.0" prefWidth="531.0" text="Via">
+                       <HBox.margin>
+                          <Insets />
+                       </HBox.margin>
+                       <font>
+                          <Font size="30.0" />
+                       </font>
+                    </Label>
+              </HBox>
+              <HBox prefHeight="30.0" prefWidth="357.0">
+                 <VBox.margin>
+                    <Insets top="10.0" />
+                 </VBox.margin>
+                    <Label prefHeight="46.0" prefWidth="114.0" text="Civico">
+                       <font>
+                          <Font size="30.0" />
+                       </font>
+                    </Label>
+                    <Label fx:id="LabelCivicoAttivita" disable="true" prefHeight="46.0" prefWidth="132.0" text="Civico">
+                       <HBox.margin>
+                          <Insets />
+                       </HBox.margin>
+                       <font>
+                          <Font size="30.0" />
+                       </font>
+                    </Label>
+                    <Label prefHeight="46.0" prefWidth="106.0" text="Città">
+                       <font>
+                          <Font size="30.0" />
+                       </font>
+                    </Label>
+                    <Label fx:id="LabelCittaAttivita" disable="true" prefHeight="46.0" prefWidth="368.0" text="Citta">
+                       <font>
+                          <Font size="30.0" />
+                       </font>
+                    </Label>
+              </HBox>
+              <HBox prefHeight="30.0" prefWidth="357.0">
+                 <VBox.margin>
+                    <Insets top="10.0" />
+                 </VBox.margin>
+                    <Label prefHeight="46.0" prefWidth="116.0" text="CAP">
+                       <font>
+                          <Font size="30.0" />
+                       </font>
+                    </Label>
+                    <Label fx:id="LabelCap" disable="true" prefHeight="46.0" prefWidth="154.0" text="CAP">
+                       <HBox.margin>
+                          <Insets />
+                       </HBox.margin>
+                       <font>
+                          <Font size="30.0" />
+                       </font>
+                    </Label>
+                    <Label prefHeight="46.0" prefWidth="133.0" text="Telefono">
+                       <font>
+                          <Font size="30.0" />
+                       </font>
+                    </Label>
+                    <Label fx:id="LabelTelefono" disable="true" prefHeight="46.0" prefWidth="302.0" text="0000000000">
+                       <font>
+                          <Font size="30.0" />
+                       </font>
+                    </Label>
+              </HBox>
+        </VBox>
+  </HBox>
+</AnchorPane>

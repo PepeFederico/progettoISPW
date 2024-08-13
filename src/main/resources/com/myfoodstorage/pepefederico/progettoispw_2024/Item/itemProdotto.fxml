@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="400.0" prefWidth="350.0" styleClass="container" stylesheets="@../../../../../Style/item.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.myfoodstorage.pepefederico.progettoispw_2024.Controller.Grafico.itemProdottoController">
+  <VBox alignment="CENTER" prefHeight="400.0" prefWidth="350.0">
+        <ImageView fx:id="iconaProdotto" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@../../../../../Image/imageCategoria/diet.png" />
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin>
+        </ImageView>
+      <Label fx:id="nomeProdotto" text="nomeProdotto" />
+      <HBox alignment="CENTER">
+        <Label disable="true" text="scadenza : ">
+           <HBox.margin>
+              <Insets right="10.0" />
+           </HBox.margin>
+        </Label>
+        <Label fx:id="scadenza">
+           <HBox.margin>
+              <Insets left="10.0" />
+           </HBox.margin>
+        </Label>
+      </HBox>
+      <HBox alignment="CENTER">
+        <HBox>
+          <Label disable="true" text="Scorte : " />
+          <Label fx:id="scorte" />
+        </HBox>
+        <HBox>
+          <Label disable="true" text="Da (g):" />
+          <Label fx:id="taglia" />
+        </HBox>
+      </HBox>
+  </VBox>
+</AnchorPane>

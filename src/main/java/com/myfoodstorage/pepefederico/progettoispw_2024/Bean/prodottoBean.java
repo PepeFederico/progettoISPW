@@ -1,0 +1,80 @@
+package com.myfoodstorage.pepefederico.progettoispw_2024.Bean;
+
+import com.myfoodstorage.pepefederico.progettoispw_2024.Model.tipoAnimale;
+import java.util.Date;
+
+public class prodottoBean {
+    private String nomeProdotto;
+    private String numeroLotto;
+    private Date scadenza;
+    private int taglia;
+    private int scorte;
+    private double costo;
+    private tipoAnimale tipoAnimale;
+
+    public prodottoBean(String nomeProdotto, String numeroLotto, Date scadenza, int taglia, int scorte, double costo, tipoAnimale tipoAnimale) {
+        this.nomeProdotto = nomeProdotto;
+        this.numeroLotto = numeroLotto;
+        this.scadenza = scadenza;
+        this.taglia = taglia;
+        this.scorte = scorte;
+        this.costo = costo;
+        this.tipoAnimale = tipoAnimale;
+    }
+
+    public String getNomeProdotto() {
+        return nomeProdotto;
+    }
+
+    public void setNomeProdotto(String nomeProdotto) {
+        this.nomeProdotto = nomeProdotto;
+    }
+
+    public String getNumeroLotto() {
+        return numeroLotto;
+    }
+
+    public void setNumeroLotto(String numeroLotto) {
+        this.numeroLotto = numeroLotto;
+    }
+
+    public Date getScadenza() {
+        return scadenza;
+    }
+
+    public void setScadenza(Date scadenza) {
+        this.scadenza = scadenza;
+    }
+
+    public int getTaglia() {
+        return taglia;
+    }
+
+    public void setTaglia(int taglia) {
+        this.taglia = taglia;
+    }
+
+    public int getScorte() {
+        return scorte;
+    }
+
+    public void setScorte(int scorte) {
+        this.scorte = scorte;
+    }
+
+    public double getCosto() {
+        return costo;
+    }
+
+    public void setCosto(double costo) {
+        this.costo = costo;
+    }
+
+    public tipoAnimale getTipoAnimale() {
+        return tipoAnimale;
+    }
+
+    public void setTipoAnimale(tipoAnimale tipoAnimale) {
+        this.tipoAnimale = tipoAnimale;
+    }
+}

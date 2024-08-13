@@ -1,0 +1,9 @@
+.container{
+    -fx-text-fill: #62A4FB;
+    -fx-font-size: 30px;
+    -fx-font-weight: bold;
+    -fx-text-alignment: center;
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #62A4FB;
+    -fx-border-width: 2px;
+}

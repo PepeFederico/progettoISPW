@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="300.0"
+            prefWidth="300.0"
+            styleClass="container"
+            stylesheets="@../../../../../Style/item.css"
+            xmlns="http://javafx.com/javafx/19"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.myfoodstorage.pepefederico.progettoispw_2024.Controller.Grafico.itemContrattoController">
+  <VBox alignment="CENTER" prefHeight="300.0" prefWidth="300.0">
+        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@../../../../../Image/contractIcon.png" />
+               <VBox.margin>
+                  <Insets bottom="15.0" />
+               </VBox.margin>
+        </ImageView>
+        <Label fx:id="nomeContratto" text="noneText" />
+  </VBox>
+</AnchorPane>

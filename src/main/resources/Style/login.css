@@ -1,0 +1,75 @@
+.login_container{
+    -fx-background-color: #62A4FB;
+}
+
+.login_logo_container{
+    -fx-alignment: center;
+}
+
+.login_logo_container Text{
+    -fx-font-size: 25px;
+    -fx-fill: #FFFFFF;
+    -fx-font-weight: bold;
+}
+
+.login_information_container {
+    -fx-background-color: #FFFFFF;
+    -fx-alignment: center;
+    -fx-font-size: 18px;
+}
+
+.login_text_information{
+    -fx-font-weight: bold;
+    -fx-font-size: 20px;
+    -fx-text-fill: #000000;
+}
+
+.login_information_container_EmailPassword{
+    -fx-font-size: 15px;
+    -fx-border-color: #62A4FB;
+    -fx-background-color: #FFFFFF;
+}
+
+.input_field_button_login{
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill: #62A4FB;
+    -fx-border-color: #62A4FB;
+    -fx-border-style: solid;
+    -fx-border-width: 1px;
+    -fx-font-size: 20px;
+}
+
+/******Transizione bottone******/
+.button{
+    -fx-transition-duration : 0.4s;
+}
+
+.button:hover{
+    -fx-background-color: #62A4FB;
+    -fx-text-fill: #FFFFFF;
+}
+
+.input_field_button_bottom{
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill: #62A4FB;
+    -fx-border-color: #62A4FB;
+    -fx-border-style: solid;
+    -fx-border-width: 1px;
+    -fx-font-size: 19px;
+}
+
+/****Stile checkbox****/
+.check-box .box{
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #62A4FB;
+    -fx-border-width: 1px;
+    -fx-font-size: 19px;
+}
+
+.check-box:selected .mark{
+    -fx-background-color: #62A4FB;
+}
+
+.error_label{
+    -fx-text-fill: #FF0000;
+}

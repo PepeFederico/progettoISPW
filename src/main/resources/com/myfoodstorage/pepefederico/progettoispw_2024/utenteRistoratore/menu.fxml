@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="250.0" styleClass="main_menu_conteiner" stylesheets="@../../../../../Style/menu.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.myfoodstorage.pepefederico.progettoispw_2024.Controller.Grafico.menuController">
+    <VBox layoutX="-1.0" layoutY="-5.0" prefHeight="800.0" prefWidth="250.0">
+        <VBox prefHeight="190.0" prefWidth="250.0" styleClass="conteiner_titolo">
+            <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                <Image url="@../../../../../Image/IconaMFS.png" />
+            <VBox.margin>
+               <Insets top="5.0" />
+            </VBox.margin>
+            </ImageView>
+            <Label alignment="CENTER" prefHeight="150.0" prefWidth="250.0" text="MyFoodStorage">
+                <font>
+                    <Font name="System Bold" size="30.0" />
+                </font>
+            </Label>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+        </VBox>
+        <VBox prefHeight="600.0" prefWidth="250.0" styleClass="menu_container">
+            <Button fx:id="homeButton" mnemonicParsing="false" text="Home">
+                <graphic>
+                    <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                        <Image url="@../../../../../Image/homeNew.png" />
+                    </ImageView>
+                </graphic>
+            <VBox.margin>
+               <Insets bottom="2.0" />
+            </VBox.margin>
+            </Button>
+            <Button fx:id="ordineButton" mnemonicParsing="false" text="Ordine">
+                <graphic>
+                    <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                        <Image url="@../../../../../Image/delivery.png" />
+                    </ImageView>
+                </graphic>
+            <VBox.margin>
+               <Insets bottom="2.0" />
+            </VBox.margin>
+            </Button>
+            <Button fx:id="contrattiButton" mnemonicParsing="false" text="Contratti">
+                <graphic>
+                    <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                        <Image url="@../../../../../Image/contractIcon.png" />
+                    </ImageView>
+                </graphic>
+            <VBox.margin>
+               <Insets bottom="2.0" />
+            </VBox.margin>
+            </Button>
+            <Button fx:id="gestioneDispensaButton" mnemonicParsing="false" text="Dispensa">
+                <graphic>
+                    <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                        <Image url="@../../../../../Image/boxes.png" />
+                    </ImageView>
+                </graphic>
+            <VBox.margin>
+               <Insets bottom="2.0" />
+            </VBox.margin>
+            </Button>
+            <Button fx:id="impostazioniButton" mnemonicParsing="false" text="Impostazioni">
+                <graphic>
+                    <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                        <Image url="@../../../../../Image/setting.png" />
+                    </ImageView>
+                </graphic>
+            <VBox.margin>
+               <Insets bottom="2.0" />
+            </VBox.margin>
+            </Button>
+            <Button fx:id="profiloButton" mnemonicParsing="false" text="Profilo">
+                <graphic>
+                    <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                        <Image url="@../../../../../Image/userNonCliccato.png" />
+                    </ImageView>
+                </graphic>
+            <VBox.margin>
+               <Insets bottom="2.0" />
+            </VBox.margin>
+            </Button>
+            <Button id="button-logout" fx:id="logoutButton" mnemonicParsing="false" text="Logout">
+                <graphic>
+                    <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                        <Image url="@../../../../../Image/power-button.png" />
+                    </ImageView>
+                </graphic>
+            <VBox.margin>
+               <Insets bottom="2.0" />
+            </VBox.margin>
+            </Button>
+        </VBox>
+    </VBox>
+</AnchorPane>
