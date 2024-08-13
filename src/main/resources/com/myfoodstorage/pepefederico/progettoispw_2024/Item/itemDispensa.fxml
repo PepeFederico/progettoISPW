@@ -7,10 +7,10 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane prefHeight="300.0" prefWidth="300.0" styleClass="container" stylesheets="@../../../../../Style/item.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.myfoodstorage.pepefederico.progettoispw_2024.Controller.Grafico.itemDispensaController">
+<AnchorPane prefHeight="300.0" prefWidth="300.0" styleClass="container" stylesheets="@../../../../../style/item.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.myfoodstorage.pepefederico.progettoispw_2024.controller.grafico.ItemDispensaController">
   <VBox alignment="CENTER" onMouseClicked="#richiestaCategorie" prefHeight="300.0" prefWidth="300.0">
         <ImageView fx:id="iconaDispensa" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
-            <Image url="@../../../../../Image/food-container.png" />
+            <Image url="@../../../../../image/food-container.png" />
                <VBox.margin>
                   <Insets bottom="15.0" />
                </VBox.margin>

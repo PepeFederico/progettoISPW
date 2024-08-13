@@ -9,11 +9,11 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="800.0" prefWidth="250.0" styleClass="main_menu_conteiner" stylesheets="@../../../../../Style/menu.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.myfoodstorage.pepefederico.progettoispw_2024.Controller.Grafico.menuController">
+<AnchorPane prefHeight="800.0" prefWidth="250.0" styleClass="main_menu_conteiner" stylesheets="@../../../../../style/menu.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.myfoodstorage.pepefederico.progettoispw_2024.controller.grafico.MenuController">
     <VBox layoutX="-1.0" layoutY="-5.0" prefHeight="800.0" prefWidth="250.0">
         <VBox prefHeight="190.0" prefWidth="250.0" styleClass="conteiner_titolo">
             <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
-                <Image url="@../../../../../Image/IconaMFS.png" />
+                <Image url="@../../../../../image/IconaMFS.png" />
             <VBox.margin>
                <Insets top="5.0" />
             </VBox.margin>
@@ -31,7 +31,7 @@
             <Button fx:id="homeButton" mnemonicParsing="false" text="Home">
                 <graphic>
                     <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
-                        <Image url="@../../../../../Image/homeNew.png" />
+                        <Image url="@../../../../../image/homeNew.png" />
                     </ImageView>
                 </graphic>
             <VBox.margin>
@@ -41,7 +41,7 @@
             <Button fx:id="ordineButton" mnemonicParsing="false" text="Ordine">
                 <graphic>
                     <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
-                        <Image url="@../../../../../Image/delivery.png" />
+                        <Image url="@../../../../../image/delivery.png" />
                     </ImageView>
                 </graphic>
             <VBox.margin>
@@ -51,7 +51,7 @@
             <Button fx:id="contrattiButton" mnemonicParsing="false" text="Contratti">
                 <graphic>
                     <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
-                        <Image url="@../../../../../Image/contractIcon.png" />
+                        <Image url="@../../../../../image/contractIcon.png" />
                     </ImageView>
                 </graphic>
             <VBox.margin>
@@ -61,7 +61,7 @@
             <Button fx:id="gestioneDispensaButton" mnemonicParsing="false" text="Dispensa">
                 <graphic>
                     <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
-                        <Image url="@../../../../../Image/boxes.png" />
+                        <Image url="@../../../../../image/boxes.png" />
                     </ImageView>
                 </graphic>
             <VBox.margin>
@@ -71,7 +71,7 @@
             <Button fx:id="impostazioniButton" mnemonicParsing="false" text="Impostazioni">
                 <graphic>
                     <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
-                        <Image url="@../../../../../Image/setting.png" />
+                        <Image url="@../../../../../image/setting.png" />
                     </ImageView>
                 </graphic>
             <VBox.margin>
@@ -81,7 +81,7 @@
             <Button fx:id="profiloButton" mnemonicParsing="false" text="Profilo">
                 <graphic>
                     <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
-                        <Image url="@../../../../../Image/userNonCliccato.png" />
+                        <Image url="@../../../../../image/userNonCliccato.png" />
                     </ImageView>
                 </graphic>
             <VBox.margin>
@@ -91,7 +91,7 @@
             <Button id="button-logout" fx:id="logoutButton" mnemonicParsing="false" text="Logout">
                 <graphic>
                     <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
-                        <Image url="@../../../../../Image/power-button.png" />
+                        <Image url="@../../../../../image/power-button.png" />
                     </ImageView>
                 </graphic>
             <VBox.margin>

@@ -20,23 +20,23 @@
             prefHeight="400.0"
             prefWidth="650.0"
             styleClass="login_container"
-            stylesheets="@../../../../Style/login.css"
+            stylesheets="@../../../../style/login.css"
             xmlns="http://javafx.com/javafx/19"
             xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="com.myfoodstorage.pepefederico.progettoispw_2024.Controller.Grafico.loginController">
+            fx:controller="com.myfoodstorage.pepefederico.progettoispw_2024.controller.grafico.LoginController">
     <HBox prefHeight="400.0" prefWidth="650.0">
         <VBox prefHeight="400.0" prefWidth="150.0" styleClass="login_logo_container">
             <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
-                <Image url="@../../../../Image/IconaMFS.png" />
+                <Image url="@../../../../image/IconaMFS.png" />
             </ImageView>
             <Text strokeType="OUTSIDE" strokeWidth="0.0" text="MyFoodStorage" />
         </VBox>
         <VBox prefHeight="400.0" prefWidth="550.0" styleClass="login_information_container">
             <Label styleClass="login_text_information" text="Login" />
             <Label styleClass="login_information_container" text="E-mail" />
-            <TextField fx:id="email_inputField" prefHeight="34.0" prefWidth="399.0" styleClass="login_information_container_EmailPassword" />
+            <TextField fx:id="emailInputField" prefHeight="34.0" prefWidth="399.0" styleClass="login_information_container_EmailPassword" />
             <Label styleClass="login_information_container" text="Password" />
-            <PasswordField fx:id="password_inputField" styleClass="login_information_container_EmailPassword" />
+            <PasswordField fx:id="passwordInputField" styleClass="login_information_container_EmailPassword" />
             <HBox prefHeight="50.0" prefWidth="450.0">
                 <CheckBox mnemonicParsing="false" text="Ricordami">
                     <padding>
@@ -47,8 +47,8 @@
                     <Insets top="10.0" />
                 </padding>
             </HBox>
-            <Label fx:id="error_label" prefHeight="30.0" prefWidth="550.0" styleClass="error_label" text="Errore:" visible="false" />
-            <Button fx:id="login_button" mnemonicParsing="false" prefHeight="30.0" prefWidth="200.0" styleClass="input_field_button_login" text="Login">
+            <Label fx:id="errorLabel" prefHeight="30.0" prefWidth="550.0" styleClass="error_label" text="Errore:" visible="false" />
+            <Button fx:id="loginButton" mnemonicParsing="false" prefHeight="30.0" prefWidth="200.0" styleClass="input_field_button_login" text="Login">
                 <VBox.margin>
                     <Insets top="20.0" />
                 </VBox.margin></Button>
@@ -61,7 +61,7 @@
                 <Button mnemonicParsing="false" styleClass="input_field_button_bottom" text="Facebook">
                     <graphic>
                         <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
-                            <Image url="@../../../../Image/facebook.png" />
+                            <Image url="@../../../../image/facebook.png" />
                         </ImageView>
                     </graphic>
                     <HBox.margin>
@@ -71,7 +71,7 @@
                 <Button mnemonicParsing="false" styleClass="input_field_button_bottom" text="Gmail">
                     <graphic>
                         <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
-                            <Image url="@../../../../Image/gmail.png" />
+                            <Image url="@../../../../image/gmail.png" />
                         </ImageView>
                     </graphic>
                     <HBox.margin>
@@ -81,7 +81,7 @@
                 <Button mnemonicParsing="false" styleClass="input_field_button_bottom" text="Registrati">
                     <graphic>
                         <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
-                            <Image url="@../../../../Image/new-account.png" />
+                            <Image url="@../../../../image/new-account.png" />
                         </ImageView>
                     </graphic>
                 </Button>

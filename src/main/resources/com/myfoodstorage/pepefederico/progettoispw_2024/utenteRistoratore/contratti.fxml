@@ -14,9 +14,9 @@
             style="-fx-background-color: #FFFFFF;"
             xmlns="http://javafx.com/javafx/19"
             xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="com.myfoodstorage.pepefederico.progettoispw_2024.Controller.Grafico.contrattiController">
+            fx:controller="com.myfoodstorage.pepefederico.progettoispw_2024.controller.grafico.ContrattiController">
 
-  <VBox prefHeight="800.0" prefWidth="800.0" styleClass="menu_container" stylesheets="@../../../../../Style/dashboard.css">
+  <VBox prefHeight="800.0" prefWidth="800.0" styleClass="menu_container" stylesheets="@../../../../../style/dashboard.css">
     <ScrollPane fx:id="scrollPane" prefHeight="740.0" prefWidth="800.0" style="-fx-background-color: #FFFFFF;">
       <GridPane fx:id="gridPane">
         <rowConstraints>
@@ -24,10 +24,10 @@
         </rowConstraints>
       </GridPane>
     </ScrollPane>
-    <Button fx:id="nuovoContratto" alignment="CENTER" mnemonicParsing="false" styleClass="menu_container" stylesheets="@../../../../../Style/dashboard.css" text="Nuovo Contratto">
+    <Button fx:id="nuovoContratto" alignment="CENTER" mnemonicParsing="false" styleClass="menu_container" stylesheets="@../../../../../style/dashboard.css" text="Nuovo Contratto">
        <graphic>
           <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
-            <Image url="@../../../../../Image/plus.png" />
+            <Image url="@../../../../../image/plus.png" />
           </ImageView>
        </graphic>
     </Button>
