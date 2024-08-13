@@ -1,5 +1,6 @@
 package com.myfoodstorage.pepefederico.progettoispw_2024.Model;
 import java.time.LocalDateTime;
+import java.util.Random;
 
 public class Sessione {
     private int ID_Sessione;
@@ -8,7 +9,7 @@ public class Sessione {
     private Utente utente;
 
     public Sessione(Utente utente) {
-        this.ID_Sessione = (int)(Math.random() * 200);
+        this.ID_Sessione = new Random().nextInt(400);
         this.data = LocalDateTime.now();
         this.utente = utente;
         this.statusSessione = true;

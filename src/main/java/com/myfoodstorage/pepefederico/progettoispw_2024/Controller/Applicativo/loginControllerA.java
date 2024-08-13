@@ -35,16 +35,13 @@ public class loginControllerA {
             fillUtenteBean(utenteLoggato);
             sessioneBean = new sessioneBean(sessioneUtente.getID_Sessione(), sessioneUtente.getData(), utenteBean, sessioneUtente.isStatusSessione());
 
-            switch (utenteLoggato.getTipoUtente()) {
-                case "Ristoratore":
-                    Model.getInstance().addSessioneUtenteRistoratore(sessioneUtente);
-                    Model.getInstance().getViewFactory().showRistoratoreWindow(sessioneBean);
-                    break;
-
-                case "Fornitore":
-                    //Da aggiungere
-                    break;
+            if(utenteLoggato.getTipoUtente().equals("Ristoratore")){
+                Model.getInstance().addSessioneUtenteRistoratore(sessioneUtente);
+                Model.getInstance().getViewFactory().showRistoratoreWindow(sessioneBean);
+            }else{
+                //Fornitore
             }
+
         } catch (UserNotFoundException unfe) {
             throw new UserNotFoundException("Errore: Credenziali non valide");
         } catch (
@@ -70,5 +67,6 @@ public class loginControllerA {
         utenteBean.setPartitaIVA(utente.getPartitaIVA());
         utenteBean.setNumeroTelefono(utente.getNumeroTelefono());
     }
+
 }
 
