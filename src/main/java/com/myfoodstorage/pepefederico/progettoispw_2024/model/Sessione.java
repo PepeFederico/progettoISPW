@@ -1,22 +1,22 @@
-package com.myfoodstorage.pepefederico.progettoispw_2024.model;
+package com.myfoodstorage.pepefederico.progettoispw_2024.Model;
 import java.time.LocalDateTime;
 import java.util.Random;
 
 public class Sessione {
-    private int idSessione;
+    private int ID_Sessione;
     private boolean statusSessione;
     private LocalDateTime data;
     private Utente utente;
 
     public Sessione(Utente utente) {
-        this.idSessione = new Random().nextInt(3000);
+        this.ID_Sessione = new Random().nextInt(400);
         this.data = LocalDateTime.now();
         this.utente = utente;
         this.statusSessione = true;
     }
 
-    public void setIdSessione(int idSessione) {
-        this.idSessione = idSessione;
+    public void setID_Sessione(int ID_Sessione) {
+        this.ID_Sessione = ID_Sessione;
     }
     public void setStatusSessione(boolean statusSessione) {
         this.statusSessione = statusSessione;
@@ -27,8 +27,8 @@ public class Sessione {
     public void setUtente(Utente utente) {
         this.utente = utente;
     }
-    public int getIdSessione() {
-        return idSessione;
+    public int getID_Sessione() {
+        return ID_Sessione;
     }
     public LocalDateTime getData() {
         return data;

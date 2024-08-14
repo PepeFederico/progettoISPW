@@ -1,4 +1,4 @@
-package com.myfoodstorage.pepefederico.progettoispw_2024.model;
+package com.myfoodstorage.pepefederico.progettoispw_2024.Model;
 
 public abstract class Utente {
     private String tipoUtente;
@@ -6,34 +6,24 @@ public abstract class Utente {
     private String password;
     private String nome;
     private String cognome;
-    private String partitaIva;
+    private String partitaIVA;
     private String viaAttivita;
     private int numeroCivico;
     private String citta;
-    private String cap;
+    private String CAP;
     private String nomeAttivita;
     private String numeroTelefono;
 
-    protected Utente(String email,
-                     String password,
-                     String nome,
-                     String cognome,
-                     String partitaIva,
-                     String viaAttivita,
-                     int numeroCivico,
-                     String citta,
-                     String cap,
-                     String nomeAttivita,
-                     String numeroTelefono) {
+    protected Utente(String email, String password, String nome, String cognome, String partitaIVA, String viaAttivita, int numeroCivico, String citta, String CAP, String nomeAttivita, String numeroTelefono) {
         this.email = email;
         this.password = password;
         this.nome = nome;
         this.cognome = cognome;
-        this.partitaIva = partitaIva;
+        this.partitaIVA = partitaIVA;
         this.viaAttivita = viaAttivita;
         this.numeroCivico = numeroCivico;
         this.citta = citta;
-        this.cap = cap;
+        this.CAP = CAP;
         this.nomeAttivita = nomeAttivita;
         this.numeroTelefono = numeroTelefono;
     }
@@ -77,12 +67,12 @@ public abstract class Utente {
         this.cognome = cognome;
     }
 
-    public String getPartitaIva() {
-        return partitaIva;
+    public String getPartitaIVA() {
+        return partitaIVA;
     }
 
-    public void setPartitaIva(String partitaIva) {
-        this.partitaIva = partitaIva;
+    public void setPartitaIVA(String partitaIVA) {
+        this.partitaIVA = partitaIVA;
     }
 
     public String getViaAttivita() {
@@ -109,12 +99,12 @@ public abstract class Utente {
         this.citta = citta;
     }
 
-    public String getCap() {
-        return cap;
+    public String getCAP() {
+        return CAP;
     }
 
-    public void setCap(String cap) {
-        this.cap = cap;
+    public void setCAP(String CAP) {
+        this.CAP = CAP;
     }
 
     public String getNomeAttivita() {
