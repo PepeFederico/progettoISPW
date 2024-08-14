@@ -9,8 +9,11 @@ import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
+import java.util.logging.Logger;
+import java.util.logging.Level;
 
 public class ViewFactory {
+    private final Logger logger = Logger.getLogger(ViewFactory.class.getName());
     private AnchorPane dashboardView;
     private AnchorPane categoriaView;
     private AnchorPane profiloView;
@@ -31,7 +34,7 @@ public class ViewFactory {
             try{
                 dashboardView = new FXMLLoader(getClass().getResource("/com/myfoodstorage/pepefederico/progettoispw_2024/utenteRistoratore/Dashboard.fxml")).load();
             }catch (Exception e){
-                e.printStackTrace();
+                logger.log(Level.SEVERE, "Context", e);
             }
         }
         return dashboardView;
@@ -42,7 +45,7 @@ public class ViewFactory {
             try{
                 categoriaView = new FXMLLoader(getClass().getResource("/com/myfoodstorage/pepefederico/progettoispw_2024/utenteRistoratore/categoria.fxml")).load();
             }catch (Exception e){
-                e.printStackTrace();
+                logger.log(Level.SEVERE, "Context", e);
             }
         }
         return categoriaView;
@@ -53,7 +56,7 @@ public class ViewFactory {
             try{
                 prodottiView = new FXMLLoader(getClass().getResource("/com/myfoodstorage/pepefederico/progettoispw_2024/utenteRistoratore/prodotti.fxml")).load();
             }catch (Exception e){
-                e.printStackTrace();
+                logger.log(Level.SEVERE, "Context", e);
             }
         }
         return prodottiView;
@@ -64,7 +67,7 @@ public class ViewFactory {
             try{
                 profiloView = new FXMLLoader(getClass().getResource("/com/myfoodstorage/pepefederico/progettoispw_2024/utenteRistoratore/profilo.fxml")).load();
             }catch (Exception e){
-                e.printStackTrace();
+                logger.log(Level.SEVERE, "Context", e);
             }
         }
         return profiloView;
@@ -75,7 +78,7 @@ public class ViewFactory {
             try{
                 contrattiView = new FXMLLoader(getClass().getResource("/com/myfoodstorage/pepefederico/progettoispw_2024/utenteRistoratore/contratti.fxml")).load();
             }catch (Exception e){
-                e.printStackTrace();
+                logger.log(Level.SEVERE, "Context", e);
             }
         }
         return contrattiView;
@@ -98,7 +101,7 @@ public class ViewFactory {
         try{
             scene = new Scene(loader.load());
         }catch (Exception e){
-            e.printStackTrace();
+            logger.log(Level.SEVERE, "Context", e);
         }
         Stage stage = new Stage();
         stage.setScene(scene);
