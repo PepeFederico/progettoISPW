@@ -6,9 +6,7 @@ public class UtenteLoginBean {
     private String password;
 
     public boolean mailSyntaxCheck(String email){
-        String emailRegex = "^[a-zA-Z0-9_+&*-]+(?:\\." +
-                "[a-zA-Z0-9_+&*-]+)*@" +
-                "(?:[a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,7}$";
+        String emailRegex = "[a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,4}";
         Pattern regExp = Pattern.compile(emailRegex);
         return regExp.matcher(email).matches();
     }
@@ -19,7 +17,6 @@ public class UtenteLoginBean {
     public void setEmail(String email) {
         this.email = email;
     }
-
     public String getPassword() {
         return password;
     }

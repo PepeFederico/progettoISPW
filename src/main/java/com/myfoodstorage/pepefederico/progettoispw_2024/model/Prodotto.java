@@ -11,7 +11,13 @@ public class Prodotto {
     private double costo;
     private TipoAnimale tipoAnimale;
 
-    public Prodotto(String nomeProdotto, String numeroLotto, Date scadenza, int taglia, int scorte, double costo, TipoAnimale tipoAnimale) {
+    public Prodotto(String nomeProdotto,
+                    String numeroLotto,
+                    Date scadenza,
+                    int taglia,
+                    int scorte,
+                    double costo,
+                    TipoAnimale tipoAnimale) {
         this.nomeProdotto = nomeProdotto;
         this.numeroLotto = numeroLotto;
         this.scadenza = scadenza;
