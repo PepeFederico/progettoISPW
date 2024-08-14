@@ -28,7 +28,6 @@ public class ViewFactory {
         return clientSelectedMenuItem;
     }
 
-
     public AnchorPane getDashboardView(){
         if (dashboardView == null){
             try{
@@ -121,11 +120,9 @@ public class ViewFactory {
     public void closeStage(Stage stage){
         stage.close();
     }
-
     public void setCategoriaView() {
         this.categoriaView = null;
     }
-
     public void setProdottiView(){
         this.prodottiView = null;
     }

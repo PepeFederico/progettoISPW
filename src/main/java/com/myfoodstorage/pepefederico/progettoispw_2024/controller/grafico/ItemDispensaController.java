@@ -16,10 +16,10 @@ public class ItemDispensaController {
         nomeDispensa.setText(dispensa.getNomeDispensa());
         switch (dispensa.getNomeDispensa()){
             case "Frigorifero":
-                iconaDispensa.setImage(new Image(String.valueOf(getClass().getResource("/image/ImageDispensa/fridge.png"))));
+                iconaDispensa.setImage(new Image(String.valueOf(getClass().getResource("/image/imageDispensa/fridge.png"))));
             break;
             case "Congelatore":
-                iconaDispensa.setImage(new Image(String.valueOf(getClass().getResource("/image/ImageDispensa/freezer.png"))));
+                iconaDispensa.setImage(new Image(String.valueOf(getClass().getResource("/image/imageDispensa/freezer.png"))));
             break;
             default:
                 iconaDispensa.setImage(new Image(String.valueOf(getClass().getResource("/image/diet.png"))));

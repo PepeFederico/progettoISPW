@@ -29,19 +29,19 @@ public class ItemProdottoController {
             case "Carne":
                 switch (prodotto.getTipoAnimale()) {
                     case Manzo:
-                        iconaProdotto.setImage(new Image(String.valueOf(getClass().getResource("/image/ImageProdotti/cow.png"))));
+                        iconaProdotto.setImage(new Image(String.valueOf(getClass().getResource("/image/imageProdotti/cow.png"))));
                         break;
                     case Vitella:
-                        iconaProdotto.setImage(new Image(String.valueOf(getClass().getResource("/image/ImageProdotti/dinosaur.png"))));
+                        iconaProdotto.setImage(new Image(String.valueOf(getClass().getResource("/image/imageProdotti/dinosaur.png"))));
                         break;
                     case Maiale:
-                        iconaProdotto.setImage(new Image(String.valueOf(getClass().getResource("/image/ImageProdotti/pig.png"))));
+                        iconaProdotto.setImage(new Image(String.valueOf(getClass().getResource("/image/imageProdotti/pig.png"))));
                         break;
                     case Pollo:
-                        iconaProdotto.setImage(new Image(String.valueOf(getClass().getResource("/image/ImageProdotti/hen.png"))));
+                        iconaProdotto.setImage(new Image(String.valueOf(getClass().getResource("/image/imageProdotti/hen.png"))));
                         break;
                     case Tacchino:
-                        iconaProdotto.setImage(new Image(String.valueOf(getClass().getResource("/image/ImageProdotti/turkey.png"))));
+                        iconaProdotto.setImage(new Image(String.valueOf(getClass().getResource("/image/imageProdotti/turkey.png"))));
                         break;
                 }
             break;
@@ -49,20 +49,20 @@ public class ItemProdottoController {
             case "Pesce":
                 switch (prodotto.getTipoAnimale()) {
                     case Salmone:
-                        iconaProdotto.setImage(new Image(String.valueOf(getClass().getResource("/image/ImageProdotti/fish.png"))));
+                        iconaProdotto.setImage(new Image(String.valueOf(getClass().getResource("/image/imageProdotti/fish.png"))));
                         break;
                     case Tonno:
-                        iconaProdotto.setImage(new Image(String.valueOf(getClass().getResource("/image/ImageProdotti/tuna.png"))));
+                        iconaProdotto.setImage(new Image(String.valueOf(getClass().getResource("/image/imageProdotti/tuna.png"))));
                         break;
                 }
             break;
 
             case "Verdura":
-                iconaProdotto.setImage(new Image(String.valueOf(getClass().getResource("/image/ImageProdotti/vegetable.png"))));
+                iconaProdotto.setImage(new Image(String.valueOf(getClass().getResource("/image/imageProdotti/vegetable.png"))));
                 break;
 
             case "Frutta":
-                iconaProdotto.setImage(new Image(String.valueOf(getClass().getResource("/image/ImageProdotti/fruits.png"))));
+                iconaProdotto.setImage(new Image(String.valueOf(getClass().getResource("/image/imageProdotti/fruits.png"))));
                 break;
 
             default:
