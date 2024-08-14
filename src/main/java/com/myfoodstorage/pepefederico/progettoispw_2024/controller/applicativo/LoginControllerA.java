@@ -1,40 +1,39 @@
-package com.myfoodstorage.pepefederico.progettoispw_2024.controller.applicativo;
+package com.myfoodstorage.pepefederico.progettoispw_2024.Controller.Applicativo;
 
 import java.io.IOException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import com.myfoodstorage.pepefederico.progettoispw_2024.dao.UtenteDao;
-import com.myfoodstorage.pepefederico.progettoispw_2024.exceptions.UserNotFoundException;
-import com.myfoodstorage.pepefederico.progettoispw_2024.bean.UtenteLoginBean;
-import com.myfoodstorage.pepefederico.progettoispw_2024.model.Model;
-import com.myfoodstorage.pepefederico.progettoispw_2024.model.Sessione;
-import com.myfoodstorage.pepefederico.progettoispw_2024.model.Utente;
-import com.myfoodstorage.pepefederico.progettoispw_2024.bean.SessioneBean;
-import com.myfoodstorage.pepefederico.progettoispw_2024.bean.UtenteBean;
+import com.myfoodstorage.pepefederico.progettoispw_2024.Exceptions.UserNotFoundException;
+import com.myfoodstorage.pepefederico.progettoispw_2024.DAO.UtenteDAO;
+import com.myfoodstorage.pepefederico.progettoispw_2024.Bean.utenteLoginBean;
+import com.myfoodstorage.pepefederico.progettoispw_2024.Model.Model;
+import com.myfoodstorage.pepefederico.progettoispw_2024.Model.Sessione;
+import com.myfoodstorage.pepefederico.progettoispw_2024.Model.Utente;
+import com.myfoodstorage.pepefederico.progettoispw_2024.Bean.sessioneBean;
+import com.myfoodstorage.pepefederico.progettoispw_2024.Bean.utenteBean;
 
-public class LoginControllerA {
-    private static final String ACTION = "Context Error";
-    private final Logger logger = Logger.getLogger(LoginControllerA.class.getName());
-    private UtenteLoginBean utente;
-    private UtenteDao utenteDAO;
-    private UtenteBean utenteBean;
+public class loginControllerA {
+    utenteLoginBean utente;
+    UtenteDAO utenteDAO;
+    Utente utenteLoggato;
+    Sessione sessioneUtente;
+    sessioneBean sessioneBean;
+    utenteBean utenteBean;
 
-    public LoginControllerA(UtenteLoginBean utente) {
+    public loginControllerA(utenteLoginBean utente) {
         this.utente = utente;
-        this.utenteDAO = new UtenteDao();
-        this.utenteBean = new UtenteBean();
+        this.utenteDAO = new UtenteDAO();
+        this.utenteBean = new utenteBean();
     }
-
-    public LoginControllerA() {}
+    public loginControllerA() {
+    }
 
     public void autenticazioneUtente() throws Exception {
         try {
             utenteDAO.verificaCredenziali(utente.getEmail(), utente.getPassword());
-            Utente utenteLoggato = utenteDAO.getUtenteLoggato();
-            Sessione sessioneUtente = com.myfoodstorage.pepefederico.progettoispw_2024.factory.SessionFactory.getInstance().getSessione(utenteLoggato);
+            utenteLoggato = utenteDAO.getUtenteLoggato();
+            sessioneUtente = com.myfoodstorage.pepefederico.progettoispw_2024.Factory.sessionFactory.getInstance().getSessione(utenteLoggato);
 
             fillUtenteBean(utenteLoggato);
-            SessioneBean sessioneBean = new SessioneBean(sessioneUtente.getIdSessione(), sessioneUtente.getData(), utenteBean, sessioneUtente.isStatusSessione());
+            sessioneBean = new sessioneBean(sessioneUtente.getID_Sessione(), sessioneUtente.getData(), utenteBean, sessioneUtente.isStatusSessione());
 
             if(utenteLoggato.getTipoUtente().equals("Ristoratore")){
                 Model.getInstance().addSessioneUtenteRistoratore(sessioneUtente);
@@ -45,12 +44,13 @@ public class LoginControllerA {
 
         } catch (UserNotFoundException unfe) {
             throw new UserNotFoundException("Errore: Credenziali non valide");
-        } catch (IOException e) {
-            logger.log(Level.SEVERE, ACTION, e);
+        } catch (
+                IOException e) {
+            throw new RuntimeException(e);
         }
     }
-    public void logout(SessioneBean sessione){
-        Model.getInstance().removeSessioneUtenteRistoratore(sessione.getIdSessione());
+    public void logout(sessioneBean sessione){
+        Model.getInstance().removeSessioneUtenteRistoratore(sessione.getID_Sessione());
     }
     private void fillUtenteBean(Utente utente){
         utenteBean.setNome(utente.getNome());
@@ -61,11 +61,12 @@ public class LoginControllerA {
 
         utenteBean.setNomeAttivita(utente.getNomeAttivita());
         utenteBean.setViaAttivita(utente.getViaAttivita());
-        utenteBean.setCap(utente.getCap());
+        utenteBean.setCAP(utente.getCAP());
         utenteBean.setCitta(utente.getCitta());
         utenteBean.setNumeroCivico(utente.getNumeroCivico());
-        utenteBean.setPartitaIva(utente.getPartitaIva());
+        utenteBean.setPartitaIVA(utente.getPartitaIVA());
         utenteBean.setNumeroTelefono(utente.getNumeroTelefono());
     }
 
 }
+
